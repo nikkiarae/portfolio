@@ -6,10 +6,12 @@ import portfolioData from 'data/portfolioData'
 import PortfolioCard from 'components/portfolioCard/portfolioCard'
 
 const PortfolioContainer = style.div`
-    height: 100%;
     background: ${theme.background};
     color: ${theme.text.secondary};
-    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    padding: 50px;
 `
 
 const Portfolio = () => {
