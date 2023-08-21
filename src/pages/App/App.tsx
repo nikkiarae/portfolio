@@ -3,13 +3,13 @@ import router from 'constants/router';
 import './App.css';
 
 // Layout Components
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Layout from 'components/Layout/layout';
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route element={<Layout />}>
             <Route index path={router.home.url} element={router.home.element} />
@@ -17,7 +17,7 @@ function App() {
             <Route path={router.portfolio.url} element={router.portfolio.element} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
