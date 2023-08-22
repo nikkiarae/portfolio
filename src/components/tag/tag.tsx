@@ -12,6 +12,7 @@ const TagContainer = style.div`
     height: 100%;
     .tag {
         margin: 0;
+        color: white;
     }
 `
 
